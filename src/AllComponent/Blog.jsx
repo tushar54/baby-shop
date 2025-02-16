@@ -26,7 +26,7 @@ export default function BlogSection  ()  {
     ];
   
     return (
-      <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="container mx-auto justify-center items-center  px-4 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {blogPosts.map((post, index) => (
           <EachBlog key={index} {...post} />
         ))}

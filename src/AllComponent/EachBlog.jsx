@@ -3,7 +3,7 @@
 // eslint-disable-next-line react/prop-types
 const EachBlog = ({ date, month, image, title, description }) => {
     return (
-        <div className="max-w-md bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <div className="justify-self-center max-w-md bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
           {/* Image */}
           <img src={image} alt={title} className="w-full h-56 object-cover" />
           

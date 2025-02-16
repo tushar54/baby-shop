@@ -5,7 +5,7 @@ const useCard = () => {
     const { data, isLoading, error, refetch } = useQuery({
         queryKey: ['cardData'],
         queryFn: async () => {
-            const res = await axios.get(`http://localhost:5000/Card`);
+            const res = await axios.get(`https://server-side-tau-lovat.vercel.app/Cart`);
             return res.data;
         },
     });

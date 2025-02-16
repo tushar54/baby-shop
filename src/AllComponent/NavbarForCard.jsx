@@ -1,27 +1,22 @@
 import { FaFacebookF, FaInstagram, FaPinterestP, FaTwitter } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import img from '../assets/subscribe-icon.png'
-import NavbarBanner from "./NavbarBanner";
 import img1 from '../assets/logo-img-1.png'
 import img2 from '../assets/cart-full-large.png'
 import useCard from "../Hooks/useCard";
 
 const Navbar = () => {
-    const { data } = useCard()
+    const {data}=useCard()
     const totalAmount = data?.reduce((acc, item) => acc + (item.price || 0), 0) || 0;
     const menu = <>
         <NavLink>
             <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="text-xl m-1">Home</div>
                 <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
-                    <Link to={'/demoInfo'}><li>Main Home</li></Link>
-                    <Link to={'/demoInfo'}><li>Kids store</li></Link>
-                    <Link to={'/demoInfo'}><li>Baby shop</li></Link>
-                    <Link to={'/demoInfo'}><li>Landing</li></Link>
-
-
-
-
+                    <li>Main Home</li>
+                    <li>Kids store</li>
+                    <li>Baby shop</li>
+                    <li>Landing</li>
 
                 </ul>
             </div>
@@ -30,12 +25,9 @@ const Navbar = () => {
             <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="text-xl m-1">Page</div>
                 <ul tabIndex={0} className="dropdown-content menu  bg-base-100 rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
-                    <Link to={'/demoInfo'}><li>About us</li></Link>
-                    <Link to={'/demoInfo'}><li>FAQ Page</li></Link>
-                    <Link to={'/demoInfo'}><li>Contact us</li></Link>
-                    
-                    
-                    
+                    <li>About us</li>
+                    <li>FAQ Page</li>
+                    <li>Contact us</li>
                 </ul>
             </div>
         </NavLink>
@@ -43,12 +35,9 @@ const Navbar = () => {
             <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="text-xl m-1">Shop</div>
                 <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
-                    <Link to={'/demoInfo'}><li>Shop List</li></Link>
-                    <Link to={'/demoInfo'}> <li>Shop Single</li></Link>
-                    <Link to={'/demoInfo'}> <li>Shop Layout</li></Link>
-                    
-                   
-                   
+                    <li>Shop List</li>
+                    <li>Shop Single</li>
+                    <li>Shop Layout</li>
 
 
                 </ul>
@@ -58,9 +47,8 @@ const Navbar = () => {
             <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="text-xl m-1">Blog</div>
                 <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
-                    <Link to={'/demoInfo'}> <li>Left Sidebar</li></Link>
-                   <Link to={'/demoInfo'}> <li>Right Sidebar</li> </Link>
-                   
+                    <li>Left Sidebar</li>
+                    <li>Right Sidebar</li>
 
 
                 </ul>
@@ -118,7 +106,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <div className="hidden lg:block w-[1100px] mx-auto py-10"> <NavbarBanner></NavbarBanner></div>
+         
         </div>
     );
 };

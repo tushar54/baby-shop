@@ -54,13 +54,11 @@ export default function Footer() {
           <p className="mt-3 text-sm text-gray-600">Monday to Friday 9 a.m. - 5 p.m.</p>
           <ul className="mt-3 space-y-2 text-sm text-gray-600">
             <li className="flex items-center justify-center md:justify-start gap-2">
-              <FaPhone /> 012 34 567 8912
+              <FaPhone /> +8801303078081
             </li>
+            
             <li className="flex items-center justify-center md:justify-start gap-2">
-              <FaPhone /> 123 45 678 9123
-            </li>
-            <li className="flex items-center justify-center md:justify-start gap-2">
-              <FaEnvelope /> playgrow@qodeinteractive.com
+              <FaEnvelope /> tusharahmed7083@gmail.com
             </li>
           </ul>
         </div>
