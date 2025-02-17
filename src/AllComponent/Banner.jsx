@@ -71,7 +71,7 @@ export default function Banner() {
         >
           <div
             data-aos="fade-up"
-            className="bg-white w-72 sm:w-80 p-6 flex flex-col gap-5 rounded-2xl absolute top-5 left-5"
+            className="bg-white  w-72 sm:w-80 p-6 flex flex-col gap-5 rounded-2xl absolute top-5 left-5"
           >
             <p className="flex justify-center items-center text-[#E0CAA1] text-2xl space-x-2">
               <FaStar />
@@ -80,8 +80,8 @@ export default function Banner() {
               <FaStar />
               <FaStar />
             </p>
-            <p className="text-2xl font-semibold">Welcome to PlayGrow</p>
-            <p className="text-lg font-light">Lorem ipsum dolor sit amet.</p>
+            <p className="text-2xl font-semibold text-slate-600">Welcome to PlayGrow</p>
+            <p className="text-lg font-light text-slate-600 text-center">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
       </SwiperSlide>
@@ -107,8 +107,8 @@ export default function Banner() {
               <FaStar />
               <FaStar />
             </p>
-            <p className="text-2xl font-semibold">Welcome to PlayGrow</p>
-            <p className="text-lg font-light">Lorem ipsum dolor sit amet.</p>
+            <p className="text-2xl font-semibold text-slate-600">Welcome to PlayGrow</p>
+            <p className="text-lg font-light text-slate-600 text-center">Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
       </SwiperSlide>

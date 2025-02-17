@@ -33,25 +33,25 @@ const NavbarBanner = () => {
       <div className="flex justify-between items-center container mx-auto bg-white mt-10">
         <div className="flex justify-center items-center flex-col">
           <img src={img} alt="" className="hover:-translate-y-1 " />
-          <h1>New In</h1>
+          <h1 className="text-black">New In</h1>
         </div>
         <div className="flex justify-center items-center flex-col">
           <img src={img3} alt="" className="hover:-translate-y-1" />
-          <h1>About us</h1>
+          <h1 className="text-black">About us</h1>
         </div>
         <div className="w-56 pb-5 flex justify-center items-center flex-col">
           <img src={img2} alt="" />
         </div>
         <div className="flex justify-center items-center flex-col">
           <img src={img1} alt="" className="hover:-translate-y-1" />
-          <h1>WishList</h1>
+          <h1 className="text-black">WishList</h1>
         </div>
         <div
           className="flex justify-center items-center flex-col relative cursor-pointer"
           onClick={() => setIsOpen(true)}
         >
           <img src={img4} alt="" className="hover:-translate-y-1" />
-          <h1>Cart</h1>
+          <h1 className="text-black">Cart</h1>
           <p className="text-sm text-gray-700 font-semibold mt-1">${totalAmount?.toFixed(2)}</p>
         </div>
       </div>
@@ -60,13 +60,13 @@ const NavbarBanner = () => {
       <div className={`fixed top-0 z-50 right-0 h-full w-96 bg-white shadow-lg p-4 transition-transform transform ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
         {/* Close Button */}
         <button
-          className="absolute top-2 right-2 text-xl font-bold"
+          className="absolute top-2 right-2 text-xl text-slate-600 font-bold"
           onClick={() => setIsOpen(false)}
         >
           ✖
         </button>
 
-        <h2 className="text-2xl font-bold mb-4">Shopping Cart</h2>
+        <h2 className="text-2xl font-bold mb-4 text-slate-600">Shopping Cart</h2>
 
         {/* Cart Items */}
         <div className="space-y-4 min-h-96">
@@ -74,14 +74,14 @@ const NavbarBanner = () => {
             data?.map((item, index) => (
               <div key={index} className="flex justify-between items-center border-b pb-2">
                 <div>
-                  <h3 className="text-sm font-semibold">{item.name}</h3>
-                  <p className="text-sm text-gray-600">${item?.price?.toFixed(2)}</p>
+                  <h3 className="text-sm font-semibold text-slate-600">{item.name}</h3>
+                  <p className="text-sm text-slate-600">${item?.price?.toFixed(2)}</p>
                 </div>
-                <span className="text-sm font-bold">x{item.quantity || 1}</span>
+                <span className="text-sm font-bold text-slate-600">x{item.quantity || 1}</span>
               </div>
             ))
           ) : (
-            <p className="text-gray-500">Your cart is empty</p>
+            <p className="text-slate-600">Your cart is empty</p>
           )}
         </div>
 

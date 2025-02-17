@@ -45,13 +45,14 @@ const Cart = () => {
   }
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto min-h-screen">
       <Navbar />
-      <div className="m-5">
+      <div className="m-5 text-slate-600">
         <p>Home {location.pathname}</p>
       </div>
-      <div className="overflow-x-auto">
-        <table className="table w-full">
+      {
+        data.length>0?<div className="overflow-x-auto">
+        <table className="table w-full *:text-slate-600">
           {/* Table Head */}
           <thead>
             <tr>
@@ -135,7 +136,8 @@ const Cart = () => {
             </tr>
           </tfoot>
         </table>
-      </div>
+      </div>:<div className="text-slate-600 text-center text-xl">No data</div>
+      }
     </div>
   );
 };

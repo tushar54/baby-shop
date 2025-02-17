@@ -13,7 +13,7 @@ const Navbar = () => {
         <NavLink>
             <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="text-xl m-1">Home</div>
-                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
+                <ul tabIndex={0} className="dropdown-content menu bg-white rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
                     <Link to={'/demoInfo'}><li>Main Home</li></Link>
                     <Link to={'/demoInfo'}><li>Kids store</li></Link>
                     <Link to={'/demoInfo'}><li>Baby shop</li></Link>
@@ -29,7 +29,7 @@ const Navbar = () => {
         <NavLink>
             <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="text-xl m-1">Page</div>
-                <ul tabIndex={0} className="dropdown-content menu  bg-base-100 rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
+                <ul tabIndex={0} className="dropdown-content menu  bg-white rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
                     <Link to={'/demoInfo'}><li>About us</li></Link>
                     <Link to={'/demoInfo'}><li>FAQ Page</li></Link>
                     <Link to={'/demoInfo'}><li>Contact us</li></Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
         <NavLink>
             <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="text-xl m-1">Shop</div>
-                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
+                <ul tabIndex={0} className="dropdown-content menu bg-white rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
                     <Link to={'/demoInfo'}><li>Shop List</li></Link>
                     <Link to={'/demoInfo'}> <li>Shop Single</li></Link>
                     <Link to={'/demoInfo'}> <li>Shop Layout</li></Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
         <NavLink>
             <div className="dropdown dropdown-hover">
                 <div tabIndex={0} role="button" className="text-xl m-1">Blog</div>
-                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
+                <ul tabIndex={0} className="dropdown-content menu bg-white rounded-box z-1 w-52 *:text-lg space-y-3 p-2 shadow-sm">
                     <Link to={'/demoInfo'}> <li>Left Sidebar</li></Link>
                    <Link to={'/demoInfo'}> <li>Right Sidebar</li> </Link>
                    
@@ -76,7 +76,7 @@ const Navbar = () => {
                     <div className="navbar">
                         <div className="navbar-start">
 
-                            <Link to={'/'} className=" hidden  tracking-[2px] lg:flex justify-center items-center gap-2"> <img src={img} alt="" className='hover:-translate-y-2' />NEWSLETTER</Link>
+                            <Link to={'/'} className=" hidden  tracking-[2px] lg:flex justify-center items-center gap-2 text-slate-600"> <img src={img} alt="" className='hover:-translate-y-2' />NEWSLETTER</Link>
                             <Link to={'/'} className="block lg:hidden">
                                 <div className="w-24 h-14">
                                     <img className="w-full h-full" src={img1} alt="" />
@@ -102,14 +102,14 @@ const Navbar = () => {
                                 </div>
                             </Link>
 
-                            <div className="dropdown">
+                            <div className="dropdown *:text-slate-600">
 
-                                <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                                <div tabIndex={0} role="button" className="btn btn-ghost text-slate-600 lg:hidden">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                                 </div>
                                 <ul
                                     tabIndex={0}
-                                    className="right-5 flex-col menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-96 p-2 shadow">
+                                    className="right-5 flex-col menu menu-sm dropdown-content bg-white rounded-box z-1 mt-3 w-96 p-2 shadow">
                                     {menu}
                                 </ul>
                             </div>
