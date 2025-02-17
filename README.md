@@ -1,8 +1,8 @@
-# My React Project
+# My React Project - Baby Shop
 
 Welcome to **Baby Shop** – a modern, user-friendly online store designed specifically for baby products. This website offers a seamless shopping experience with a clean design and easy navigation.
-[Live]([URL](https://baby-shop-six.vercel.app/))
 
+[Live Demo](https://baby-shop-six.vercel.app/)
 
 ## Features
 
@@ -17,6 +17,6 @@ Welcome to **Baby Shop** – a modern, user-friendly online store designed speci
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/your-react-project.git
-   cd your-react-project
+   git clone https://github.com/tushar54/baby-shop.git
+   cd baby-shop
    npm install
