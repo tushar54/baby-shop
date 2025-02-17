@@ -3,7 +3,7 @@
 const DemoRoute = () => {
     return (
         <div className="min-h-screen flex justify-center items-center">
-            This route is under the development            
+            This route is under development            
         </div>
     );
 };

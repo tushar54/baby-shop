@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 
 // eslint-disable-next-line react/prop-types
 const EachBlog = ({ date, month, image, title, description }) => {
@@ -21,7 +21,7 @@ const EachBlog = ({ date, month, image, title, description }) => {
             <p className="text-gray-600 text-sm mb-4">{description}</p>
             
             {/* Read More Link */}
-            <a href="#" className="text-[#DB915E] font-semibold hover:underline">READ MORE</a>
+            <Link to={'/demoInfo'}  className="text-[#DB915E] font-semibold hover:underline">READ MORE</Link>
           </div>
         </div>
       );
