@@ -1,6 +1,7 @@
 # My React Project
 
-A beautiful, responsive React application built with Tailwind CSS. This project features a shopping cart, product listing pages, and more.
+Welcome to **Baby Shop** – a modern, user-friendly online store designed specifically for baby products. This website offers a seamless shopping experience with a clean design and easy navigation.
+##https://baby-shop-six.vercel.app/
 
 
 ## Features
