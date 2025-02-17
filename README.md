@@ -1,7 +1,7 @@
 # My React Project
 
 Welcome to **Baby Shop** – a modern, user-friendly online store designed specifically for baby products. This website offers a seamless shopping experience with a clean design and easy navigation.
-##https://baby-shop-six.vercel.app/
+[Live]([URL](https://baby-shop-six.vercel.app/))
 
 
 ## Features
